@@ -1,0 +1,34 @@
+.start {
+	display: flex;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	width: 150px;
+	height: 100vw;
+	padding: 12px 20px;
+	gap: 20px;
+
+	/* background-color: var(--color-bgr-filter); */
+
+	font-size: 24px;
+}
+
+.item {
+	display: flex;
+	/* align-items: center;
+	justify-content: center; */
+
+	min-width: 80px;
+	padding: 10px;
+
+	border-bottom: var(--color-text);
+	border-radius: 12px;
+}
+
+.item:hover,
+.item:focus {
+	color: var(--color-accent);
+}

@@ -1,0 +1,26 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 14px 44px;
+	min-width: 136px;
+
+	border-radius: 12px;
+	background: var(--color-btn-bgr);
+
+	font-family: 'Manrope', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.43;
+	color: var(--color-btn-text);
+
+	cursor: pointer;
+	transition:
+		background-color var(--time-animation) var(--timing-function);
+}
+
+.btn:hover,
+.btn:focus {
+	background: var(--color-accent);
+}
