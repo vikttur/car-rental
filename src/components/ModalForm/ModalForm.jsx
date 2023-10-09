@@ -67,7 +67,7 @@ const ModalForm = () => {
 
         <button type="button" className={css.btnClose}>
           <svg className={css.iconClose} width="24" height="24">
-            <use href="components/images/close.svg"></use>
+            <use href="./src/images/icons.svg#close"></use>
           </svg>
         </button>
       </div>

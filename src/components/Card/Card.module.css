@@ -1,8 +1,11 @@
 .card {
 	display: flex;
 	flex-direction: column;
+	position: relative;
+
 	width: 100%;
 	height: 100%;
+	background: var(--color-bgr-page);
 }
 
 .img {
@@ -64,4 +67,26 @@
 
 .btn {
 	margin-top: auto;
+}
+
+.btnHeart {
+	display: flex;
+	position: absolute;
+	/* justify-content: center;
+	align-items: center; */
+	top: 14px;
+	right: 14px;
+
+	width: 18px;
+	height: 18px;
+
+	cursor: pointer;
+
+	border: red;
+	color: var(--color-heart);
+
+}
+
+.iconHeart {
+	fill: currentColor;
 }

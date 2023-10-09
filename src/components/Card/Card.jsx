@@ -29,6 +29,12 @@ const Card = () => {
       <button type="button" className={css.btn}>
         Learn more
       </button>
+
+      <button type="button" className={css.btnHeart}>
+        <svg className={css.iconHeart} width="18" height="18">
+          <use href="./src/images/heart.svg"></use>
+        </svg>
+      </button>
     </div>
   );
 };

@@ -4,7 +4,7 @@
 	--color-bgr-body: #12141766;
 	--color-backdrop: #12141780;
 	--color-bgr-page: #ffffff;
-	--color-bgr-filter: #f7f7fb;
+	--color-bgr-option: #f7f7fb;
 	--color-bgr-image: #f3f3f2;
 	--color-bgr-item: #F9F9F9;
 	--color-btn-text: #ffffff;
@@ -21,6 +21,7 @@
 	--time-animation: 250ms;
 	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+	--border-label: 1px solid #8a8a8933;
 	--gradient-img: linear-gradient(180deg, rgba(18, 20, 23, 0.50) 2.5%, rgba(18, 20, 23, 0.00) 41.07%);
 }
 
@@ -34,8 +35,6 @@ body {
 	font-family: 'Manrope', sans-serif;
 	font-size: 12px;
 	line-height: 1.5;
-	/* line-height: 18px; */
-
 	color: var(--color-text);
 
 	-webkit-font-smoothing: antialiased;
@@ -60,6 +59,8 @@ p {
 ul {
 	margin: 0;
 	padding: 0;
+
+	list-style-type: none;
 }
 
 a {

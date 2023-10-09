@@ -2,7 +2,6 @@
 	display: flex;
 	gap: 18px;
 	justify-content: center;
-	border: 1px solid blue;
 }
 
 .list {
@@ -25,15 +24,50 @@
 	color: var(--color-label);
 }
 
-.option {
-	padding: 14px;
+.optionBrand,
+.optionPrice,
+.optionFrom,
+.optionTo {
+	padding-top: 14px;
+	padding-bottom: 14px;
 
 	border: none;
-	border-radius: 14px;
-	background-color: var(--color-bgr-filter);
+	background-color: var(--color-bgr-option);
 
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.11;
-	color: var(--color-text);
+}
+
+.optionBrand,
+.optionPrice {
+	padding-left: 18px;
+	border-radius: 14px;
+}
+
+.optionFrom,
+.optionTo {
+	width: 160px;
+	padding-left: 24px;
+}
+
+.optionBrand {
+	min-width: 224px;
+}
+
+.optionPrice {
+	width: 125px;
+}
+
+.optionFrom {
+	border-radius: 14px 0 0 14px;
+	border-right: var(--border-label);
+}
+
+.optionTo {
+	border-radius: 0 14px 14px 0;
+}
+
+.optionMiles {
+	display: flex;
 }

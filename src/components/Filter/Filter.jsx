@@ -7,15 +7,32 @@ const Filter = () => {
       <ul className={css.list}>
         <li className={css.item}>
           <p className={css.label}>Car brand</p>
-          <input className={css.option} placeholder="Enter the text"></input>
+          <ul className={css.optionBrand}>
+            <li className={css.selectedOption}>
+              <span>Enter the text</span>
+              {/* <ul><li></li></ul> */}
+            </li>
+          </ul>
         </li>
         <li className={css.item}>
           <p className={css.label}>Price/ 1 hour</p>
-          <input className={css.option} placeholder="To $"></input>
+          <ul className={css.optionPrice}>
+            <li className={css.selectedOption}>
+              <span>To $</span>
+              {/* <ul><li></li></ul> */}
+            </li>
+          </ul>
         </li>
         <li className={css.item}>
           <p className={css.label}>Сar mileage / km</p>
-          <input className={css.option} placeholder="From"></input>
+          <ul className={css.optionMiles}>
+            <li className={css.optionFrom}>
+              <span>From</span>
+            </li>
+            <li className={css.optionTo}>
+              <span>To</span>
+            </li>
+          </ul>
         </li>
       </ul>
       {/* <Button handleClick={ttt}>Search</Button> */}

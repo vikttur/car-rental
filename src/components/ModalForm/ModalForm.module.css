@@ -1,4 +1,4 @@
-.backdrop {
+/* .backdrop {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -11,7 +11,7 @@
 	opacity: 1;
 	transition:
 		opacity var(--time-animation) var(--timing-function);
-}
+} */
 
 .is-hidden {
 	pointer-events: none;
@@ -52,7 +52,7 @@
 	align-items: center;
 
 	width: 461px;
-	height: 268px;
+	height: 248px;
 
 	border-radius: 14px;
 	background: var(--gradient-img);
@@ -129,7 +129,6 @@
 	flex-wrap: wrap;
 	padding-top: 8px;
 	padding-bottom: 30px;
-
 	gap: 8px;
 
 	color: var(--color-another);
@@ -166,7 +165,6 @@
 	cursor: pointer;
 
 	border: none;
-	background-color: #ffffff;
 	color: var(--color-text);
 	transition:
 		color var(--time-animation) var(--timing-function);
@@ -178,5 +176,5 @@
 }
 
 .iconClose {
-	fill: red;
+	fill: currentColor;
 }
