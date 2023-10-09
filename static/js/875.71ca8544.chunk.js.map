@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/875.71ca8544.chunk.js","mappings":"gIAUA,UARgB,WACd,OACE,0BACE,wBAAI,kBAGT,C","sources":["pages/Catalog.jsx"],"sourcesContent":["// import xx from '../components/xx';\n\nconst Catalog = () => {\n  return (\n    <div>\n      <h1>catalog page</h1>\n    </div>\n  );\n};\n\nexport default Catalog;\n"],"names":[],"sourceRoot":""}
