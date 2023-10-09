@@ -1,0 +1,39 @@
+.filter {
+	display: flex;
+	gap: 18px;
+	justify-content: center;
+	border: 1px solid blue;
+}
+
+.list {
+	display: flex;
+	gap: 18px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+
+	gap: 8px;
+}
+
+.label {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.29;
+
+	color: var(--color-label);
+}
+
+.option {
+	padding: 14px;
+
+	border: none;
+	border-radius: 14px;
+	background-color: var(--color-bgr-filter);
+
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.11;
+	color: var(--color-text);
+}

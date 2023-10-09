@@ -1,0 +1,67 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.img {
+	width: 100%;
+	height: 268px;
+
+	border-radius: 14px;
+	background: var(--gradient-img);
+	object-fit: cover;
+	background-repeat: no-repeat;
+}
+
+.model {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 14px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.itemColor {
+	color: var(--color-btn-bgr);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	padding-top: 8px;
+	row-gap: 4px;
+}
+
+.data {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 12px;
+
+	color: var(--color-form-label);
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: baseline;
+	position: relative;
+}
+
+.item:nth-child(n+2)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: var(--color-line);
+	width: 1px;
+	height: 16px;
+	left: -6px;
+}
+
+.btn {
+	margin-top: auto;
+}

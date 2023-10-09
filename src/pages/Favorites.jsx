@@ -1,10 +1,17 @@
-// import xx from '../components/xx';
+import Container from '../components/Container/Container';
+import Filter from '../components/Filter/Filter';
+import CarList from '../components/CarList/CarList';
 
 const Favorites = () => {
   return (
-    <div>
+    <Container>
       <h1>favorites page</h1>
-    </div>
+      <Filter />
+      <CarList />
+      {/* <Filter onSubmit={setSearchParams} /> */}
+      {/* {car.length ? <CarList car={car} /> : ''} */}
+      <p>Load more</p>
+    </Container>
   );
 };
 

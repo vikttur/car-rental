@@ -1,27 +1,35 @@
 @import-normalize;
 
 :root {
-	--color-bgr: #ffffff;
-	--color-btn-text: #ffffff;
+	--color-bgr-body: #12141766;
+	--color-backdrop: #12141780;
+	--color-bgr-page: #ffffff;
 	--color-bgr-filter: #f7f7fb;
 	--color-bgr-image: #f3f3f2;
+	--color-bgr-item: #F9F9F9;
+	--color-btn-text: #ffffff;
 	--color-text: #121417;
 	--color-another: #363535;
 	--color-drop-list: #12141733;
-	--color-form-label: #12141780;
 	--color-label: #8a8a89;
+	--color-form-label: #12141780;
 	--color-btn-bgr: #3470ff;
 	--color-accent: #0b44cd;
 	--color-heart: #ffffffcc;
-	--color-line: #12141780;
+	--color-line: #1214171a;
 
 	--time-animation: 250ms;
 	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	--gradient-img: linear-gradient(180deg, rgba(18, 20, 23, 0.50) 2.5%, rgba(18, 20, 23, 0.00) 41.07%);
 }
 
 body {
+	display: flex;
+	justify-content: center;
+
 	margin: 0;
-	background-color: var(--color-bgr);
+	background-color: var(--color-bgr-body);
 
 	font-family: 'Manrope', sans-serif;
 	font-size: 12px;
@@ -49,8 +57,7 @@ p {
 	margin: 0;
 }
 
-ul,
-ol {
+ul {
 	margin: 0;
 	padding: 0;
 }

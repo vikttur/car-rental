@@ -1,8 +1,15 @@
 .container {
-	height: 100%;
-	max-width: 1440px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 1440px;
+	height: 100vw;
+
 	padding-top: 150px;
 	padding-left: 128px;
 	padding-right: 128px;
 	padding-bottom: 150px;
+
+	background-color: var(--color-bgr-page);
+	/* border: 1px solid blue; */
 }

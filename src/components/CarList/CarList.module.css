@@ -1,0 +1,21 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	width: 274px;
+	height: 426px;
+}
+
+.item:not(:nth-child(4n)) {
+	margin-right: 29px;
+}
+
+.item:not(:nth-last-child(-n+4)) {
+	margin-bottom: 50px;
+}

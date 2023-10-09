@@ -1,44 +1,23 @@
-import { Suspense } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-import { Loader } from '../Loader/Loader';
+import { NavLink } from 'react-router-dom';
 import css from './Sidebar.module.css';
 
 const Sidebar = () => {
   return (
-    <div className={css.start}>
-      <ul className={css.navigation}>
-        <li className={css.item}>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li className={css.item}>
-          <NavLink to="/catalog">Catalog</NavLink>
-        </li>
-        <li className={css.item}>
-          <NavLink to="/favorites">Favorites</NavLink>
-        </li>
-      </ul>
-
-      <main>
-        <Suspense fallback={<Loader />}>
-          <h1>Congratulations after routing the project!</h1>
-          <Outlet />
-        </Suspense>
-      </main>
-
-      {/* <footer>
-        <ul>
-          <li>
-            <p>1</p>
+    <aside className={css.sidebar}>
+      <nav>
+        <ul className={css.navigation}>
+          <li className={css.item}>
+            <NavLink to="/">Home</NavLink>
           </li>
-          <li>
-            <p>2</p>
+          <li className={css.item}>
+            <NavLink to="/catalog">Catalog</NavLink>
           </li>
-          <li>
-            <p>3</p>
+          <li className={css.item}>
+            <NavLink to="/favorites">Favorites</NavLink>
           </li>
         </ul>
-      </footer> */}
-    </div>
+      </nav>
+    </aside>
   );
 };
 

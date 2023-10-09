@@ -1,0 +1,182 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	overflow-y: scroll;
+
+	background-color: var(--color-backdrop);
+	opacity: 1;
+	transition:
+		opacity var(--time-animation) var(--timing-function);
+}
+
+.is-hidden {
+	pointer-events: none;
+	opacity: 0;
+}
+
+.modal {
+	.backdrop.is-hidden & {
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(0);
+	}
+}
+
+.modal {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 541px;
+	padding: 40px;
+
+	border-radius: 24px;
+	background-color: var(--color-bgr-page);
+
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+	transition: opacity var(--time-animation) var(--timing-function) var(--time-animation),
+		transform var(--time-animation) var(--timing-function) var(--time-animation);
+}
+
+.img {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 461px;
+	height: 268px;
+
+	border-radius: 14px;
+	background: var(--gradient-img);
+
+	object-fit: cover;
+	background-repeat: no-repeat;
+
+	/* background: url("#"), #d3d3d3 50% / cover no-repeat; */
+}
+
+.model {
+	padding-top: 14px;
+
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.33;
+}
+
+.itemColor {
+	font-weight: bold;
+	color: var(--color-btn-bgr);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	padding-top: 8px;
+	row-gap: 4px;
+}
+
+.data {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 12px;
+
+	color: var(--color-form-label);
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: baseline;
+	position: relative;
+}
+
+.item:nth-child(n+2)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: var(--color-line);
+	width: 1px;
+	height: 16px;
+	left: -6px;
+}
+
+.description {
+	padding-top: 14px;
+
+	font-size: 14px;
+	line-height: 1.43;
+}
+
+.title {
+	padding-top: 24px;
+
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.43;
+}
+
+.rental {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 8px;
+	padding-bottom: 30px;
+
+	gap: 8px;
+
+	color: var(--color-another);
+}
+
+.itemRental {
+	display: flex;
+	padding: 7px 14px;
+
+	border-radius: 35px;
+	background-color: var(--color-bgr-item);
+}
+
+.itemRental:nth-child(2) {
+	margin-right: 100px;
+}
+
+.btn {
+	width: 168px;
+	margin-top: auto;
+}
+
+.btnClose {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: 16px;
+	right: 16px;
+
+	width: 24px;
+	height: 24px;
+
+	cursor: pointer;
+
+	border: none;
+	background-color: #ffffff;
+	color: var(--color-text);
+	transition:
+		color var(--time-animation) var(--timing-function);
+}
+
+.btnClose:hover,
+.btnClose:focus {
+	color: var(--color-accent);
+}
+
+.iconClose {
+	fill: red;
+}
