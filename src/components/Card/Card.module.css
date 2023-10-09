@@ -72,17 +72,14 @@
 .btnHeart {
 	display: flex;
 	position: absolute;
-	/* justify-content: center;
-	align-items: center; */
 	top: 14px;
 	right: 14px;
 
 	width: 18px;
 	height: 18px;
 
+	border: none;
 	cursor: pointer;
-
-	border: red;
 	color: var(--color-heart);
 
 }

@@ -2,6 +2,7 @@
 	display: flex;
 	gap: 18px;
 	justify-content: center;
+	padding-bottom: 50px;
 }
 
 .list {
@@ -22,6 +23,28 @@
 	line-height: 1.29;
 
 	color: var(--color-label);
+}
+
+.selectedOption {
+	position: relative;
+}
+
+.btnChevron {
+	display: flex;
+	position: absolute;
+	top: 14px;
+	right: 18px;
+
+	width: 20px;
+	height: 20px;
+
+	border: none;
+	cursor: pointer;
+	color: var(--color-heart);
+}
+
+.iconChevron {
+	fill: currentColor;
 }
 
 .optionBrand,

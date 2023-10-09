@@ -30,7 +30,7 @@ const Card = () => {
         Learn more
       </button>
 
-      <button type="button" className={css.btnHeart}>
+      <button type="" className={css.btnHeart}>
         <svg className={css.iconHeart} width="18" height="18">
           <use href="./src/images/heart.svg"></use>
         </svg>

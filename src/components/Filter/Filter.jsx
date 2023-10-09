@@ -11,6 +11,11 @@ const Filter = () => {
             <li className={css.selectedOption}>
               <span>Enter the text</span>
               {/* <ul><li></li></ul> */}
+              <button type="button" className={css.btnChevron}>
+                <svg className={css.iconChevron} width="20" height="20">
+                  <use href=".src/images/chevron.svg"></use>
+                </svg>
+              </button>
             </li>
           </ul>
         </li>
@@ -20,6 +25,11 @@ const Filter = () => {
             <li className={css.selectedOption}>
               <span>To $</span>
               {/* <ul><li></li></ul> */}
+              <button type="button" className={css.btnChevron}>
+                <svg className={css.iconChevron} width="20" height="20">
+                  <use href=".src/images/chevron.svg"></use>
+                </svg>
+              </button>
             </li>
           </ul>
         </li>
@@ -41,7 +51,3 @@ const Filter = () => {
 };
 
 export default Filter;
-
-// <svg class="search-form__icon js-theme">
-//   <use href="./images/sprite.svg#icon-search"></use>
-// </svg>;

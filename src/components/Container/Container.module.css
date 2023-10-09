@@ -1,3 +1,7 @@
+.flex {
+	display: flex;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -11,5 +15,4 @@
 	padding-bottom: 150px;
 
 	background-color: var(--color-bgr-page);
-	/* border: 1px solid blue; */
 }
